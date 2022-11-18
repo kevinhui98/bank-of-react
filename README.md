@@ -12,7 +12,10 @@ Note: This application uses React Router version 5. Optionally, you can run the 
 ```npm install react-router-dom@5.3.0 react-router@5.2.1```
 
 ### Live Link 
-[Website link](https://johnnylaicode.github.io/bank-of-react-example-code-gh-pages/)
+[Website link](https://kevinhui98.github.io/bank-of-react-example-code-gh-pages/)
+
+### gif
+<img src="public/bank of react.gif" width=250><br>
 
 ----------
 ### Use the following steps to set up and deploy the React application to GitHub Pages
