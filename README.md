@@ -1,20 +1,11 @@
-# bank-of-react-example-code-gh-pages
+
+# bank-of-react
 This repository contains a React application example on how to implement client-side routing with React Router and its components including Route, Router Link, and Redirect.
 
-### Use the following commands to run the application
-
-- First, run this command to install dependencies:
-```npm install```
-- Next, run this command to start the React application:
-```npm start```
-
-Note: This application uses React Router version 5. Optionally, you can run the following command to install React Router version 5 dependencies:
-```npm install react-router-dom@5.3.0 react-router@5.2.1```
 
 ### Live Link 
 [Website link](https://kevinhui98.github.io/bank-of-react/)
 
-----------
 ### Use the following steps to set up and deploy the React application to GitHub Pages
 #### 1. Download the React Application
 1. Download the GitHub repository ZIP file to your local machine and unzip it.
@@ -60,6 +51,6 @@ Note: This application uses React Router version 5. Optionally, you can run the 
 1. Add a `remote` to the local repository by entering the command in the following format: `git remote add origin https://github.com/[your GitHub username]/[repository name].git`
 2. For the "my-react-app" application, it should be:`git remote add origin https://github.com/[your GitHub username]/my-react-app.git` 
 
-#### 8. Deploy React Application to GitHub Pages
-1. Deploy the "my-react-app" application to GitHub Pages by entering the command: `npm run deploy`
-2. Open a web browser, go to the following address to see your React application on GitHub Pages: `https://[your GitHub username].github.io/my-react-app/` 
+
+### gif
+<img src="public/bank of react.gif" width=2000><br>
