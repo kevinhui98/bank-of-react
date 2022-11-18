@@ -40,15 +40,28 @@ class App extends Component {
       debitList: [...this.state.debitList, newDebit]
     })
   }
+  // addCredit function that updates the state of the creditList base on user input
+  addCredit = (e) => {
+    e.preventDefault();
+    let newCredit = {
+      id: this.state.creditList.length + 1,
+      description: e.target.description.value,
+      amount: e.target.amount.value,
+      date: new Date().toISOString()
+    }
+    this.setState({
+      creditList: [...this.state.creditList, newCredit]
+    })
+  }
 
   componentDidMount() {
-    // fetch('https://moj-api.herokuapp.com/credits')
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     this.setState({
-    //       creditList: data
-    //     })
-    //   })
+    fetch('https://moj-api.herokuapp.com/credits')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          creditList: data
+        })
+      })
     fetch('https://moj-api.herokuapp.com/debits')
       .then(res => res.json())
       .then(data => {
