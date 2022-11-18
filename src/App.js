@@ -70,6 +70,22 @@ class App extends Component {
         })
       })
   }
+  //on change of credit and debit list, update the account balance
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.creditList !== this.state.creditList || prevState.debitList !== this.state.debitList) {
+      let creditTotal = 0;
+      let debitTotal = 0;
+      this.state.creditList.forEach(credit => {
+        creditTotal += parseFloat(credit.amount);
+      })
+      this.state.debitList.forEach(debit => {
+        debitTotal += parseFloat(debit.amount);
+      })
+      this.setState({
+        accountBalance: (creditTotal - debitTotal).toFixed(2)
+      })
+    }
+  }
 
   // Update state's currentUser (userName) after "Log In" button is clicked
   mockLogIn = (logInInfo) => {
