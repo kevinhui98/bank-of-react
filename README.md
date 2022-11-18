@@ -15,7 +15,7 @@ Note: This application uses React Router version 5. Optionally, you can run the 
 [Website link](https://kevinhui98.github.io/bank-of-react-example-code-gh-pages/)
 
 ### gif
-<img src="public/bank of react.gif" width=250><br>
+<img src="public/bank of react.gif" width=2000><br>
 
 ----------
 ### Use the following steps to set up and deploy the React application to GitHub Pages
